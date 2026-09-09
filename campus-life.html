@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life & Environment | Little Stars Nursery & Day Care</title>
+    
+    <!-- Preloading fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link to single stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="brand-container">
+                    <img src="assets/logo.png" alt="Little Stars Nursery Logo">
+                    <span class="brand-text">Little Stars</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="anthems.html">Anthems & Values</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner" style="background: linear-gradient(rgba(8, 45, 90, 0.45), rgba(8, 45, 90, 0.35)), url('assets/20260831_150908.jpg') center/cover no-repeat; padding: 60px 0; text-align: center;">
+            <div class="container">
+                <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Campus Life & Environment</h1>
+                <p style="font-size: 1.1rem; max-width: 650px; margin: 0 auto;">Explore our vibrant outdoor play areas, secure classrooms, and value-rich green compound in Nansana.</p>
+            </div>
+        </section>
+
+        <!-- Video Tour -->
+        <section class="container" style="margin-top: 50px; margin-bottom: 50px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+                <div style="flex: 1 1 350px;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto;">
+                        <video controls preload="metadata" poster="assets/videos/dc637df3fc0c692ced750ac13899f33f.jpg" style="width: 100%; aspect-ratio: 9 / 16; object-fit: cover; display: block; background: #000;">
+                            <source src="assets/videos/dc637df3fc0c692ced750ac13899f33f.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div style="flex: 1 1 350px;">
+                    <span style="color: #d9232d; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Take A Look Around</span>
+                    <h2 style="color: #082d5a; margin-top: 5px; margin-bottom: 15px;">A Video Tour of Our Campus</h2>
+                    <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">Walk our halls and peek into an active classroom, from the secure corridors to pupils busy at their writing exercises.</p>
+                    <a href="admissions.html" class="btn primary-btn" style="margin-top: 10px; display: inline-block;">Schedule A Campus Visit</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Playground & Courtyard Overview -->
+        <section class="container" style="margin-top: 50px; margin-bottom: 50px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+                <div style="flex: 1 1 350px;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openModal('assets/20260831_150908.jpg', 'Safe Outdoor Playground & Courtyard Overview')">
+                        <img src="assets/20260831_150908.jpg" alt="Playground and Courtyard Overview" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease;" loading="lazy">
+                    </div>
+                    <div style="text-align: center; margin-top: 10px;">
+                        <button onclick="openModal('assets/20260831_150908.jpg', 'Safe Outdoor Playground & Courtyard Overview')" class="btn secondary-btn" style="font-size: 0.85rem; padding: 6px 14px;">
+                            <i class="fa-solid fa-expand"></i> View Full Photo
+                        </button>
+                    </div>
+                </div>
+                <div style="flex: 1 1 350px;">
+                    <span style="color: #d9232d; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Outdoor Recreation</span>
+                    <h2 style="color: #082d5a; margin-top: 5px; margin-bottom: 15px;">Playground & Courtyard Overview</h2>
+                    <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">Our campus features a fully fenced, child-friendly outdoor play space equipped with swings, open green lawn, and shaded rest areas.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 8px; color: #333;"><i class="fa-solid fa-circle-check" style="color: #28a745; margin-right: 8px;"></i> Secure perimeter fence painted with bright, welcoming colors</li>
+                        <li style="margin-bottom: 8px; color: #333;"><i class="fa-solid fa-circle-check" style="color: #28a745; margin-right: 8px;"></i> Sturdy swing sets and motor skill recreation equipment</li>
+                        <li style="margin-bottom: 8px; color: #333;"><i class="fa-solid fa-circle-check" style="color: #28a745; margin-right: 8px;"></i> Constant staff supervision during break and play time</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Value Signs & Garden Culture -->
+        <section style="background: #f8f9fa; padding: 50px 0; margin-bottom: 50px;">
+            <div class="container">
+                <div style="display: flex; flex-wrap: wrap-reverse; gap: 30px; align-items: center;">
+                    <div style="flex: 1 1 350px;">
+                        <span style="color: #d9232d; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Character Building</span>
+                        <h2 style="color: #082d5a; margin-top: 5px; margin-bottom: 15px;">Moral & Environmental Guidance</h2>
+                        <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">Our green trees and gardens are mounted with positive character-shaping signboards that inspire children and reinforce our core values daily.</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 20px;">
+                            <div style="background: #ffffff; padding: 12px 15px; border-radius: 6px; border-left: 3px solid #082d5a; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                                <strong style="color: #082d5a; font-size: 0.9rem;">"Your future is created by what you do today not tomorrow"</strong>
+                            </div>
+                            <div style="background: #ffffff; padding: 12px 15px; border-radius: 6px; border-left: 3px solid #28a745; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                                <strong style="color: #28a745; font-size: 0.9rem;">"Keep the environment clean"</strong>
+                            </div>
+                            <div style="background: #ffffff; padding: 12px 15px; border-radius: 6px; border-left: 3px solid #d9232d; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                                <strong style="color: #d9232d; font-size: 0.9rem;">"With God all things are possible"</strong>
+                            </div>
+                            <div style="background: #ffffff; padding: 12px 15px; border-radius: 6px; border-left: 3px solid #ffc107; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                                <strong style="color: #856404; font-size: 0.9rem;">"Learn to forgive"</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1 1 350px;">
+                        <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openModal('assets/20260831_150901.jpg', 'Value Signs on Compound Trees & Garden')">
+                            <img src="assets/20260831_150901.jpg" alt="Value Signs on Trees and Garden" style="width: 100%; height: auto; display: block;" loading="lazy">
+                        </div>
+                        <div style="text-align: center; margin-top: 10px;">
+                            <button onclick="openModal('assets/20260831_150901.jpg', 'Value Signs on Compound Trees & Garden')" class="btn secondary-btn" style="font-size: 0.85rem; padding: 6px 14px;">
+                                <i class="fa-solid fa-expand"></i> View Full Photo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Classroom Exterior & Behavioral Signage -->
+        <section class="container" style="margin-bottom: 50px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+                <div style="flex: 1 1 350px;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openModal('assets/20260831_150852.jpg', 'Classroom Entrance & Discipline Signage')">
+                        <img src="assets/20260831_150852.jpg" alt="Classroom Exterior and Behavioral Signage" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    </div>
+                    <div style="text-align: center; margin-top: 10px;">
+                        <button onclick="openModal('assets/20260831_150852.jpg', 'Classroom Entrance & Discipline Signage')" class="btn secondary-btn" style="font-size: 0.85rem; padding: 6px 14px;">
+                            <i class="fa-solid fa-expand"></i> View Full Photo
+                        </button>
+                    </div>
+                </div>
+
+                <div style="flex: 1 1 350px;">
+                    <span style="color: #d9232d; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Structured Learning Space</span>
+                    <h2 style="color: #082d5a; margin-top: 5px; margin-bottom: 15px;">Classroom Doors & Social Discipline</h2>
+                    <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">Each classroom block is distinctively named and labeled (such as K1 Pelican and K2 Swan). Prominent entry signs reinforce discipline and social behavior expectations.</p>
+                    
+                    <div style="background: #e8f4fd; padding: 15px 20px; border-radius: 8px; margin-bottom: 12px;">
+                        <h4 style="color: #082d5a; margin-bottom: 4px;"><i class="fa-solid fa-quote-left" style="margin-right: 6px; color: #d9232d;"></i> "Greeting is a sign of discipline"</h4>
+                        <p style="color: #555; font-size: 0.88rem; margin: 0;">Reminding young learners to cultivate respect, gratitude, and warm community interactions with peers and elders.</p>
+                    </div>
+
+                    <div style="background: #e8f4fd; padding: 15px 20px; border-radius: 8px;">
+                        <h4 style="color: #082d5a; margin-bottom: 4px;"><i class="fa-solid fa-quote-left" style="margin-right: 6px; color: #d9232d;"></i> "Education is the best opportunity"</h4>
+                        <p style="color: #555; font-size: 0.88rem; margin: 0;">Instilling a lifelong valuation for curiosity, listening skills, and academic diligence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Classroom Front View & Garden Area -->
+        <section class="container" style="margin-bottom: 60px;">
+            <div style="display: flex; flex-wrap: wrap-reverse; gap: 30px; align-items: center;">
+                <div style="flex: 1 1 350px;">
+                    <span style="color: #d9232d; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Facility Architecture</span>
+                    <h2 style="color: #082d5a; margin-top: 5px; margin-bottom: 15px;">Clean, Bright & Ventilated Buildings</h2>
+                    <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">Our classroom verandas open into neat garden borders and shaded walkways. We maintain strict hygiene standards and ensure excellent natural lighting in all learning spaces.</p>
+                    <a href="admissions.html" class="btn primary-btn" style="margin-top: 10px; display: inline-block;">Schedule A Campus Visit</a>
+                </div>
+
+                <div style="flex: 1 1 350px;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;" onclick="openModal('assets/20260831_150845.jpg', 'Classroom Front View & Garden Area')">
+                        <img src="assets/20260831_150845.jpg" alt="Classroom Front View and Garden Area" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    </div>
+                    <div style="text-align: center; margin-top: 10px;">
+                        <button onclick="openModal('assets/20260831_150845.jpg', 'Classroom Front View & Garden Area')" class="btn secondary-btn" style="font-size: 0.85rem; padding: 6px 14px;">
+                            <i class="fa-solid fa-expand"></i> View Full Photo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Fullscreen Photo View -->
+    <div id="imageModal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.85); justify-content: center; align-items: center;">
+        <span style="position: absolute; top: 15px; right: 25px; color: #fff; font-size: 35px; font-weight: bold; cursor: pointer;" onclick="closeModal()">&times;</span>
+        <div style="max-width: 800px; width: 100%; text-align: center;">
+            <img id="modalImg" style="max-width: 100%; max-height: 80vh; border-radius: 8px;" alt="Campus Preview">
+            <p id="modalCaption" style="color: #fff; margin-top: 15px; font-size: 1.1rem;"></p>
+        </div>
+    </div>
+
+    <!-- Professional Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Little Stars Nursery & Day Care</h3>
+                <p>Located in Nansana-Wakiso, near the business centre.<br>We care as you do !!</p>
+                <p style="margin-top: 8px;"><a href="https://maps.app.goo.gl/AvHJs4MyYUoxHnjm9" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">📍 View on Google Maps</a></p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Call / WhatsApp:</p>
+                <p>+256 772 580 980</p> 
+                <p>+256 762 325 402</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Little Stars Nursery & Day Care. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+256772580980" class="floating-call" aria-label="Call Us">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1 .7 2.81 2 2 0 0 1-.7 2.81 2 2 0 0 1-2 1.72h-3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+        </svg>
+    </a>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/256772580980?text=Hello%2C%20I%20have%20an%20inquiry%20regarding%20Little%20Stars%20Nursery%20%26%20Day%20Care." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35" fill="#ffffff">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-24.3-115.5-63.1-154.3z"></path>
+        </svg>
+    </a>
+
+    <!-- Modal Helper Script -->
+    <script>
+        function openModal(imgSrc, captionText) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalCaption = document.getElementById('modalCaption');
+            modal.style.display = 'flex';
+            modalImg.src = imgSrc;
+            modalCaption.textContent = captionText;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

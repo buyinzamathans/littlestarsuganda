@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Little Stars Nursery & Day Care</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="brand-container">
+                    <img src="assets/logo.png" alt="Little Stars Nursery Logo">
+                    <span class="brand-text">Little Stars</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Open Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p>We’d love to hear from you! Reach out to us for inquiries, school visits, or admissions.</p>
+            </div>
+        </section>
+
+        <!-- Contact Information & Form Grid -->
+        <section class="container" style="margin-bottom: 60px;">
+            <div class="about-grid" style="align-items: start;">
+                
+                <!-- Operational Details & Contact Information -->
+                <div class="about-text">
+                    <h2>Reach Out to Us</h2>
+                    <p>Have questions about our daycare, nursery, or primary programs? Our team is always ready to assist you.</p>
+                    
+                    <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 20px;">
+                        <div class="value-card" style="padding: 15px 20px;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 5px;">📍 School Location</h3>
+                            <p style="color: var(--text-light); margin: 0;">Nansana-Wakiso, near the Business Centre<br>P.O. Box 78 Nansana, Wakiso, Uganda</p>
+                        </div>
+
+                        <div class="value-card" style="padding: 15px 20px;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 5px;">📞 Phone & WhatsApp</h3>
+                            <p style="color: var(--text-light); margin: 0;">+256 772 580 980<br>+256 762 325 402</p>
+                        </div>
+
+                        <div class="value-card" style="padding: 15px 20px;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 5px;">✉️ Email Address</h3>
+                            <p style="color: var(--text-light); margin: 0;">littlestarsnurseryanddaycare@gmail.com</p>
+                        </div>
+
+                        <div class="value-card" style="padding: 15px 20px; border-left: 5px solid var(--fun-accent);">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 5px;">🕒 Operating Hours</h3>
+                            <p style="color: var(--text-light); margin: 0;">
+                                <strong>Monday – Friday:</strong> 7:00 AM – 5:30 PM<br>
+                                <strong>Saturday:</strong> 8:00 AM – 1:00 PM (Weekend Care / Inquiries)<br>
+                                <strong>Sunday & Public Holidays:</strong> Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="value-card" style="padding: 30px; border-top: 5px solid var(--primary-blue);">
+                    <h2 style="color: var(--primary-blue); margin-bottom: 10px;">Send Us a Message</h2>
+                    <p style="color: var(--text-light); margin-bottom: 25px; font-size: 0.95rem;">Fill out the form below and we will respond as soon as possible.</p>
+                    
+                    <form id="contact-form" action="https://formspree.io/f/xwlkwoka" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                        <!-- Redirect back to GitHub Pages thank-you page after success -->
+                        <input type="hidden" name="_next" value="https://buyinzamathans.github.io/thank-you.html">
+                        <!-- Optional: customize email subject -->
+                        <input type="hidden" name="_subject" value="New contact form submission">
+
+                        <!-- Honeypot spam protection (also enable Honeypot in Formspree dashboard) -->
+                        <div style="display:none;">
+                            <label>Leave this empty</label>
+                            <input name="_gotcha" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div>
+                            <label for="parent-name" style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--primary-blue);">Parent / Guardian Name *</label>
+                            <input type="text" id="parent-name" name="parent_name" required placeholder="e.g. Jane Doe" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+                        </div>
+
+                        <div>
+                            <label for="phone-number" style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--primary-blue);">Phone / WhatsApp Number *</label>
+                            <input type="tel" id="phone-number" name="phone_number" required placeholder="e.g. +256 700 000 000" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+                        </div>
+
+                        <div>
+                            <label for="email-address" style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--primary-blue);">Email Address</label>
+                            <input type="email" id="email-address" name="email" placeholder="e.g. parent@gmail.com" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+                        </div>
+
+                        <div>
+                            <label for="program-interest" style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--primary-blue);">Program of Interest</label>
+                            <select id="program-interest" name="program_interest" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: var(--font-main); background: #fff;">
+                                <option value="Day Care">Day Care (1-3 Years)</option>
+                                <option value="Nursery">Nursery School (3-6 Years)</option>
+                                <option value="Primary">Primary Section (5-6 Years)</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--primary-blue);">Message / Inquiry *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="How can we help you?" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn primary-btn" style="width: 100%; background-color: var(--primary-blue); color: var(--white); border-color: var(--primary-blue); font-size: 1rem; padding: 12px 16px; border-radius: 8px;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Map Location Section -->
+        <section class="container" style="margin-bottom: 60px;">
+            <div class="value-card" style="padding: 0; overflow: hidden;">
+                <div style="padding: 20px 25px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;">
+                    <div>
+                        <h2 style="color: var(--primary-blue); margin: 0 0 4px;">Find Us on the Map</h2>
+                        <p style="color: var(--text-light); margin: 0;">Little Stars Nursery & Day Care, Nansana, Wakiso</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/AvHJs4MyYUoxHnjm9" target="_blank" rel="noopener noreferrer" class="btn primary-btn" style="font-size: 0.9rem;">
+                        📍 Get Directions
+                    </a>
+                </div>
+                <iframe
+                    src="https://maps.google.com/maps?cid=11204298089298843543&output=embed"
+                    width="100%"
+                    height="400"
+                    style="border: 0; display: block;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Little Stars Nursery & Day Care location on Google Maps">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Quick Action CTA Section -->
+        <section class="container" style="margin-bottom: 60px; text-align: center;">
+            <div class="value-card" style="padding: 40px; background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue)); color: var(--white);">
+                <h2 style="color: var(--white); margin-bottom: 10px;">Need Immediate Assistance?</h2>
+                <p style="max-width: 600px; margin: 0 auto 25px; color: #f0f0f0;">Chat with us directly on WhatsApp or give us a call for instant answers regarding admissions and school tours.</p>
+                <div class="hero-buttons" style="justify-content: center; gap: 15px;">
+                    <a href="https://wa.me/256762325402" class="btn secondary-btn" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                    <a href="tel:+256762325402" class="btn primary-btn">Call Us Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Little Stars Nursery & Day Care</h3>
+                <p>Located in Nansana-Wakiso, near the business centre.<br>We care as you do !!</p>
+                <p style="margin-top: 8px;"><a href="https://maps.app.goo.gl/AvHJs4MyYUoxHnjm9" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">📍 View on Google Maps</a></p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Call / WhatsApp:</p>
+                <p>+256 772 580 980</p> 
+                <p>+256 762 325 402</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Little Stars Nursery & Day Care. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+256762325402" class="floating-call" aria-label="Call Us">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0"></path>
+        </svg>
+    </a>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/256762325402" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35" fill="#ffffff">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-"></path>
+        </svg>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+</html>

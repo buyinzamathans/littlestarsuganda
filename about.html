@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Staff | Little Stars Nursery & Day Care</title>
+    
+    <!-- Preloading fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link to single stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="brand-container">
+                    <img src="assets/logo.png" alt="Little Stars Nursery Logo">
+                    <span class="brand-text">Little Stars</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="anthems.html">Anthems & Values</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Title Banner -->
+        <section class="page-banner" style="background: linear-gradient(rgba(8, 45, 90, 0.45), rgba(8, 45, 90, 0.35)), url('assets/20260831_150845.jpg') center/cover no-repeat; padding: 60px 0; text-align: center;">
+            <div class="container">
+                <h1 style="font-size: 2.5rem; margin-bottom: 10px;">About Us & Leadership</h1>
+                <p style="font-size: 1.1rem; max-width: 650px; margin: 0 auto;">Dedicated educators, supportive staff, and a nurturing community commitment in Nansana.</p>
+            </div>
+        </section>
+
+        <!-- Official Staff Board Interactive Feature -->
+        <section class="container" style="margin-top: 40px; margin-bottom: 40px;">
+            <div class="staff-board-cta" style="background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+                <div style="flex: 1 1 300px;">
+                    <h3 style="color: #082d5a; margin-bottom: 8px;">Official Staff Directory Board</h3>
+                    <p style="color: #555; margin: 0;">View the complete, verified organizational board featuring all Head Teachers, Departmental Leads, Teachers, and Support Staff.</p>
+                </div>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button onclick="openModal('assets/20260831_145622.jpg', 'Little Stars Official Staff Directory Board')" class="btn primary-btn" style="font-size: 0.9rem; padding: 10px 18px;">
+                        <i class="fa-solid fa-expand"></i> View Full Staff Board
+                    </button>
+                    <a href="assets/20260831_145622.jpg" download class="btn secondary-btn" style="font-size: 0.9rem; padding: 10px 18px;">
+                        <i class="fa-solid fa-download"></i> Download Image
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- School Leadership -->
+        <section class="container" style="margin-bottom: 50px;">
+            <div class="section-title">
+                <h2>School Leadership & Management</h2>
+                <p>Guiding our institution toward educational excellence and compassionate care.</p>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px;">
+                <!-- Head Teacher -->
+                <div class="program-card" style="flex: 0 1 320px; text-align: center; border-top: 4px solid #d9232d;">
+                    <div style="padding: 25px 20px;">
+                        <div style="width: 110px; height: 110px; border-radius: 50%; background: #e8f4fd; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; border: 3px solid #082d5a;">
+                            <i class="fa-solid fa-user-tie" style="font-size: 3rem; color: #082d5a;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 5px; color: #082d5a;">Katusiime Naomi Natukunda</h3>
+                        <p style="color: #d9232d; font-weight: 700; font-size: 0.95rem; margin-bottom: 12px;">Head Teacher</p>
+                        <p style="font-size: 0.9rem; color: #666; line-height: 1.5;">Leading Little Stars with dedication to early childhood development, academic excellence, and holistic child wellbeing.</p>
+                    </div>
+                </div>
+
+                <!-- Deputy Head Teacher -->
+                <div class="program-card" style="flex: 0 1 320px; text-align: center; border-top: 4px solid #082d5a;">
+                    <div style="padding: 25px 20px;">
+                        <div style="width: 110px; height: 110px; border-radius: 50%; background: #e8f4fd; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; border: 3px solid #082d5a;">
+                            <i class="fa-solid fa-user-check" style="font-size: 3rem; color: #082d5a;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 5px; color: #082d5a;">Atuhaire Medidah</h3>
+                        <p style="color: #082d5a; font-weight: 700; font-size: 0.95rem; margin-bottom: 12px;">Deputy Head Teacher</p>
+                        <p style="font-size: 0.9rem; color: #666; line-height: 1.5;">Overseeing academic standards, teacher coordination, and daily school operations to ensure smooth learning execution.</p>
+                    </div>
+                </div>
+
+                <!-- School Bursar -->
+                <div class="program-card" style="flex: 0 1 320px; text-align: center; border-top: 4px solid #ffc107;">
+                    <div style="padding: 25px 20px;">
+                        <div style="width: 110px; height: 110px; border-radius: 50%; background: #fff3cd; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; border: 3px solid #ffc107;">
+                            <i class="fa-solid fa-calculator" style="font-size: 3rem; color: #856404;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 5px; color: #082d5a;">Kasabe Milton</h3>
+                        <p style="color: #856404; font-weight: 700; font-size: 0.95rem; margin-bottom: 12px;">School Bursar</p>
+                        <p style="font-size: 0.9rem; color: #666; line-height: 1.5;">Managing financial administration, admissions accounting, and parent inquiry payments with transparency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departmental Heads & Specialized Roles -->
+        <section class="container" style="margin-bottom: 50px;">
+            <div class="section-title">
+                <h2>Departmental Heads & Specialized Staff</h2>
+                <p>Expert coordination across academics, welfare, guidance, and spiritual growth.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 30px;">
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Okoth John</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Director of Studies (Teachers Rep)</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Rashid Kifuba</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Head of Academics</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Nandawula Winnie</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Head of Nursery Section (MDD)</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Muluuta Wilberforce</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">School Chaplain</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Mwanje James</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Assistant Chaplain</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Nankya Marry Christine</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Librarian (Incharge of Welfare)</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Muhindo Asasio</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Head of Science Department</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Bwambale Benon</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Head of Scouting</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Akankunda Shallom</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Head of Language Department</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Kintu Ronald</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Head of Social Development Department</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Kulabako Asia</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Guidance & Counseling</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Nasuuna Norah</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Senior Woman</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Namyalo Juliet</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Health & Sanitation</p>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #082d5a; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #082d5a; margin-bottom: 4px;">Kyobwoine Susan</h4>
+                    <p style="color: #d9232d; font-weight: 600; font-size: 0.85rem; margin-bottom: 8px;">Head of Compound</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Staff Grid -->
+        <section class="container" style="margin-bottom: 50px;">
+            <div class="section-title">
+                <h2>Teaching Staff</h2>
+                <p>Our passionate educators nurturing young minds every day.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-top: 25px;">
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Kayesu Caroline</h5></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Komujuni Cathy</h5></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Kubakurungi Mollie</h5></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Nabatanzi Faridah</h5></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Nakijoba Maria</h5></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Nakyambadde Eron</h5></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Namirembe Edith</h5></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Namugga Sarah</h5></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Nansubuga Florence</h5></div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0;"><h5 style="margin: 0; color: #082d5a;">Turinawe Arivious</h5></div>
+            </div>
+        </section>
+
+        <!-- Support Staff Section -->
+        <section class="container" style="margin-bottom: 60px;">
+            <div class="section-title">
+                <h2>Support Staff & Child Welfare</h2>
+                <p>Ensuring safety, care, transport, and a clean environment for every star.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 25px;">
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Nabwiire Doreen</h5><span style="font-size: 0.85rem; color: #666;">Daycare Attendant</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Nankoma Winfred</h5><span style="font-size: 0.85rem; color: #666;">Daycare Attendant</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Natuhwera Cleophus</h5><span style="font-size: 0.85rem; color: #666;">Security & Driver</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Nakyanzi Agnes</h5><span style="font-size: 0.85rem; color: #666;">Kitchen Staff</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Muhanguzi Aloysious</h5><span style="font-size: 0.85rem; color: #666;">Maintenance</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Kijjambu Richard</h5><span style="font-size: 0.85rem; color: #666;">Driver</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Anguzi Nelson</h5><span style="font-size: 0.85rem; color: #666;">Security Guard</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Pariayo William</h5><span style="font-size: 0.85rem; color: #666;">Driver</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Agotre Alex</h5><span style="font-size: 0.85rem; color: #666;">Compound Assistant</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Gaddafi Ezra</h5><span style="font-size: 0.85rem; color: #666;">Security Guard</span></div>
+                <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 3px solid #082d5a;"><h5 style="margin: 0; color: #082d5a;">Katsimba Asaph</h5><span style="font-size: 0.85rem; color: #666;">Driver</span></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Fullscreen Staff Directory Board View -->
+    <div id="imageModal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.85); justify-content: center; align-items: center;">
+        <span style="position: absolute; top: 15px; right: 25px; color: #fff; font-size: 35px; font-weight: bold; cursor: pointer;" onclick="closeModal()">&times;</span>
+        <div style="max-width: 800px; width: 100%; text-align: center;">
+            <img id="modalImg" style="max-width: 100%; max-height: 80vh; border-radius: 8px;" alt="Staff Directory Preview">
+            <p id="modalCaption" style="color: #fff; margin-top: 15px; font-size: 1.1rem;"></p>
+        </div>
+    </div>
+
+    <!-- Professional Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Little Stars Nursery & Day Care</h3>
+                <p>Located in Nansana-Wakiso, near the business centre.<br>We care as you do !!</p>
+                <p style="margin-top: 8px;"><a href="https://maps.app.goo.gl/AvHJs4MyYUoxHnjm9" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">📍 View on Google Maps</a></p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Call / WhatsApp:</p>
+                <p>+256 772 580 980</p> 
+                <p>+256 762 325 402</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Little Stars Nursery & Day Care. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+256772580980" class="floating-call" aria-label="Call Us">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1 .7 2.81 2 2 0 0 1-2 1.72h-3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+        </svg>
+    </a>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/256772580980?text=Hello%2C%20I%20have%20an%20inquiry%20regarding%20Little%20Stars%20Nursery%20%26%20Day%20Care." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35" fill="#ffffff">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-24.3-115.5-63.1-154.3z"></path>
+        </svg>
+    </a>
+
+    <!-- Modal Helper Script -->
+    <script>
+        function openModal(imgSrc, captionText) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalCaption = document.getElementById('modalCaption');
+            modal.style.display = 'flex';
+            modalImg.src = imgSrc;
+            modalCaption.textContent = captionText;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
