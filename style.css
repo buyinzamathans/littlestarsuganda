@@ -37,6 +37,7 @@ body {
     background-color: var(--bg-light);
     position: relative; 
     min-height: 100vh;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -347,6 +348,8 @@ button, input, select, textarea {
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .page-header p {
@@ -364,6 +367,8 @@ button, input, select, textarea {
 .page-banner h1 {
     color: var(--white);
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.55);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .page-banner p {
@@ -694,6 +699,52 @@ button, input, select, textarea {
     line-height: 1.7;
 }
 
+.footer-social h4 {
+    margin-bottom: 18px;
+    color: var(--white);
+    font-weight: 800;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.social-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--white);
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.social-icon-link:hover {
+    background: var(--fun-accent);
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+}
+
+.social-handle {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+}
+
+.social-handle a {
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.social-handle a:hover {
+    text-decoration: underline;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 25px;
@@ -808,6 +859,27 @@ button, input, select, textarea {
     .hero-content p {
         font-size: 1.05rem;
     }
+
+    /* Inner Page Header/Banner Titles */
+    .page-header {
+        padding: 50px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    .page-banner h1 {
+        font-size: 1.9rem !important;
+    }
+
+    .page-banner p {
+        font-size: 1rem !important;
+    }
     
     .hero-buttons {
         flex-direction: column;
@@ -820,6 +892,30 @@ button, input, select, textarea {
     }
 
     /* Tabs Responsive Adjustments */
+    .tab-buttons {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        padding: 4px 4px 12px;
+        margin-bottom: 25px;
+        scrollbar-width: none;
+    }
+
+    .tab-buttons::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tab-btn {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        padding: 9px 20px;
+        font-size: 0.88rem;
+        white-space: nowrap;
+    }
+
     .tab-content.active {
         flex-direction: column;
     }
